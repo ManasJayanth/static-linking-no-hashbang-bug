@@ -1,0 +1,17 @@
+* Steps to reproduce
+
+  1. Run =make=
+
+  #+begin_src sh
+  make 
+  #+end_src
+
+  (runs fine and displays the date)
+
+  2. Remove the shebang line from =script.sh= and run make again
+
+  #+begin_src sh
+  make
+  #+end_src
+
+  (Fails with 127)
