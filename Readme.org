@@ -15,3 +15,12 @@
   #+end_src
 
   (Fails with 127)
+
+This issue isn't seen in non-static scenario
+
+  #+begin_src sh
+  ocamlopt -o hello unix.cmxa hello.ml
+  chmod u+x script.sh
+  ./hello ./script.sh # with shebang line works
+  ./hello ./script.sh # without shebang works too
+  #+end_src
